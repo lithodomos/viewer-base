@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it matches the snapshot 1`] = `1100`;
+
+exports[`it matches the snapshot 2`] = `960`;
+
+exports[`it matches the snapshot 3`] = `800`;
+
+exports[`it matches the snapshot 4`] = `676`;
+
+exports[`it matches the snapshot 5`] = `500`;
+
+exports[`it matches the snapshot 6`] = `1200`;
+
+exports[`it matches the snapshot 7`] = `50`;
+
+exports[`it matches the snapshot 8`] = `240`;
+
+exports[`it matches the snapshot 9`] = `16`;
+
+exports[`it matches the snapshot 10`] = `20`;

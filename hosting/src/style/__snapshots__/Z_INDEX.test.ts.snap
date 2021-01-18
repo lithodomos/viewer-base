@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it matches the snapshot 1`] = `
+Object {
+  "FULLSCREEN_VIDEO": 499,
+  "HEADER": 999,
+  "IMAGE_VIEW": 499,
+  "LOADING_SCREEN": 999,
+  "MENU": 899,
+  "MODAL": 1000,
+  "OVERLAY_UI": 799,
+  "PANORAMA": 499,
+  "PANORAMA_LOADING": 999,
+  "REACT_TOAST_CONTAINER": 1001,
+  "STREET_VIEW": 499,
+  "VIEWER": 489,
+}
+`;

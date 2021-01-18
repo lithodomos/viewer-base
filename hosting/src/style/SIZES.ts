@@ -1,0 +1,13 @@
+export const SCREEN_WIDTH_BREAK_EXTRA_LARGE = 1100;
+export const SCREEN_WIDTH_BREAK_LARGE = 960;
+export const SCREEN_WIDTH_BREAK_MEDIUM = 800;
+export const SCREEN_WIDTH_BREAK_SMALL = 676;
+export const SCREEN_WIDTH_BREAK_EXTRA_SMALL = 500;
+export const SCREEN_WIDTH_MAX = 1200;
+
+export const HEADER_HEIGHT = 50;
+export const HEADER_WIDTH = 240;
+
+export const HEADER_BUTTON_SIZE = 16;
+
+export const ICON_BUTTON_SIZE = 20;
