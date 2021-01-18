@@ -1,0 +1,5 @@
+- The code is in /hosting/src folder
+- Do not change any of the configs without adding comments. And do not eject the app.
+- Do not introduce any new npm modules. There are heaps in the package.json file already.
+- You need to use `styled-components` for stying.
+- Strict Typescript types should be defined (without using `any`)

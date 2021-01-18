@@ -1,0 +1,24 @@
+There is a lot of architectural decisions already made for you, which is important when it comes to integrating with our existing product. 
+
+1) Same app, different configurations
+  We want to be able to configure the app based on a configuration to suppose white labeled applications.
+  In this repo, we currently pass a variable at build time which gets stored in the bundle and used for determining how the app gets rendered at runtime.
+  - Variable name is REACT_APP_NAME. The possible values are in /hosting/src/App/config/enums.ts. Eg: `REACT_APP_NAME=DEFAULT yarn start`.
+  - Based on this variable, the app will load the theme, banner, header details at runtime. The configs are in /hosting/src/branding folder. This is incomplete.
+
+2) Deploy a different firebase app per configuration.
+  We want to be able to deploy different configuration (whitelabelled apps) to a different URL.
+  
+  - A default Firebase config is provided. (firebase.json).
+  - You need to write a script to build and deploy each configuration to a different Firebase site 
+  - You would need to set up Firebase account for yourself if you don't have one already. It is free. (We mentioned we will provide this, but there is too much logistics involved in security, so we'd want you to create your own one for testing). Then create a project and add two hosting sites to it. Let's say they are site-abc.web.app, site-xyz.web.app (can be anything).
+  - When you run `yarn deploy`, it should build a production build for each configuration and deploy to the correct site.
+  Eg: REACT_APP_NAME=DEFAULT deploys to site-abc.web.app
+      REACT_APP_NAME=SECOND deploys to site-xyz.web.app
+  - Important that it is scalable, and that we can configure which sites to deploy
+
+3) Create the home page as per the provided designs and customisable options. 
+  - We don't require you to implement business logic other than the customisation logic.
+  - Don't worry about data fetching. Just hardcode the necessary data. Yuu can use DEFAULT_TOURS in ToursSection component for reference.
+  - You should use react-google-map (https://www.npmjs.com/package/google-map-react) package for Maps.
+  - Need to be responsive. Breakpoints are in /hosting/src/style/SIZES.ts
